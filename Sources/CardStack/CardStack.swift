@@ -140,12 +140,12 @@ struct CardStackView_Previews: PreviewProvider {
                 CardStack(colors, currentIndex: $currentIndex) { namedColor in
                     RoundedRectangle(cornerRadius: 20, style: .continuous)
                         .fill(namedColor.color)
-//                        .overlay(
-//                            Text(namedColor.name)
-//                                .font(.largeTitle)
-//                                .fontWeight(.bold)
-//                                .foregroundColor(.white)
-//                        )
+                        .overlay(
+                            Text(namedColor.name)
+                                .font(.largeTitle)
+                                .fontWeight(.bold)
+                                .foregroundColor(.white)
+                        )
                         .frame(height: 400)
                         .onTapGesture {
                             tappedIndex = currentIndex
@@ -154,12 +154,12 @@ struct CardStackView_Previews: PreviewProvider {
 
                 }
                 
-//                Text("Current card is \(currentIndex)")
-//                if let tappedIndex = tappedIndex {
-//                    Text("Card \(tappedIndex) was tapped")
-//                } else {
-//                    Text("No card has been tapped")
-//                }
+                Text("Current card is \(currentIndex)")
+                if let tappedIndex = tappedIndex {
+                    Text("Card \(tappedIndex) was tapped")
+                } else {
+                    Text("No card has been tapped")
+                }
             }
         }
     }
