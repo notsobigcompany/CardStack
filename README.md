@@ -3,7 +3,7 @@ A SwiftUI view that arranges its children in a whimsical interactive deck of car
 
 ![Card stack](Preview.gif)
 
-CardStack mimics the behaviour of the photo stack in iMessage, first introduced in iOS 15.
+CardStack mimics the behaviour of the photo stack in iMessage, as well as the "Top Stories" in [Big News](https://bignews.app).
 
 ## Overview
 You create stacks dynamically from an underlying collection of data. Each item in the collection must conform to `Identifiable`. 
@@ -16,7 +16,7 @@ CardStack(items) { item in
 }
 ```
 
-## Supporting selection in stacks 
+## Supporting selections in stacks 
 To make members of a stack selectable, install a tap gesture inside the view provider.
 
 ```swift
