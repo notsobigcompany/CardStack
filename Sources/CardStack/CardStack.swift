@@ -73,7 +73,7 @@ public struct CardStack<Data, Content>: View where Data: RandomAccessCollection,
         } else {
             self.currentIndex = index
         }
-        self.finalCurrentIndex = Int(index)
+        self.finalCurrentIndex = Int(self.currentIndex)
     }
     
     private func zIndex(for index: Int) -> Double {
