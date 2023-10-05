@@ -1,4 +1,8 @@
+> [!WARNING]  
+> This package is now deprecated in favour of  [CardDeckPageViewStyle](https://opensource.notsobig.company/documentation/bigswiftui/carddeckpageviewstyle/) found in the new [BigUIPaging](https://github.com/notsobigcompany/BigUIPaging) package.
+
 # CardStack
+
 A SwiftUI view that arranges its children in a whimsical interactive deck of cards.
 
 ![Card stack](Preview.gif)

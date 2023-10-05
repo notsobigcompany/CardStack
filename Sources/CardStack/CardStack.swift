@@ -3,6 +3,7 @@ import SwiftUI
 /**
  A SwiftUI view that arranges its children in an interactive deck of cards.
  */
+@available(*, deprecated, message: "Use CardDeckPageViewStyle in the new BigUIPaging package https://github.com/notsobigcompany/BigUIPaging")
 public struct CardStack<Data, Content>: View where Data: RandomAccessCollection, Data.Element: Identifiable, Content: View {
     @State private var currentIndex: Double = 0.0
     @State private var previousIndex: Double = 0.0
